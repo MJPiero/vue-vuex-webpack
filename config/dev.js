@@ -17,7 +17,7 @@ module.exports = merge(base_config, {
   },
   output: {
     filename: 'js/app.js',
-    publicPath: "http://192.168.43.125:3000/"
+    publicPath: "http://localhost:3000/"
   },
   resolve: {
     alias: {

@@ -4,7 +4,7 @@
   "main": "index.js",
   "author": "MaJing <merlu.majing@gmail.com>",
   "scripts": {
-    "dev": "cross-env NODE_ENV=dev webpack-dev-server --config config/dev.js --open --inline --hot --compress --history-api-fallback --port 3000 --host 192.168.43.125",
+    "dev": "cross-env NODE_ENV=dev webpack-dev-server --config config/dev.js --open --inline --hot --compress --history-api-fallback --port 3000",
     "build": "cross-env NODE_ENV=prod webpack --progress --hide-modules --json --profile > error-only.json --config config/build.js"
   },
   "license": "MIT",

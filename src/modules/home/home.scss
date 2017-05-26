@@ -1,0 +1,9 @@
+@import '../../sass/base';
+
+.page-home{
+	display: flex;
+	flex: 1;
+	.main-container{
+		flex: 1;
+	}
+}

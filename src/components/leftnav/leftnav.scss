@@ -1,0 +1,10 @@
+@import '../../sass/base';
+
+.ASApp-leftnav{
+	width: 220px;
+	border-right: $ASApp-borderColor solid 1px;
+	@media (min-width: 1308px){
+		width: 260px;
+	}
+	padding: 20px 0 20px 20px;
+}

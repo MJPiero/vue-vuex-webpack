@@ -1,14 +1,22 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
 
-import user from './user';
-import realtime from './realtime';
-
 Vue.use(Vuex);
 
+const state = {};
+const getters = {};
+const actions = {};
+const mutations = {};
+
+const debug = __ENV__ == 'dev';
+
 export default new Vuex.Store({
-  modules: {
-  	user,
-  	realtime
-  }
-});
+    state,
+    actions,
+    getters,
+    mutations,
+    // 命名空间
+    //  modules: {},
+    strict: debug,
+    middlewares: debug ? [] : [] 
+})

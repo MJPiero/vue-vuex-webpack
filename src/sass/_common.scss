@@ -1,0 +1,177 @@
+body,html{
+    font-size: $mob-fontSizeBase;
+    width: 100%;
+    height: 100%;
+    color: $mob-fontColor;
+}
+a{
+    font-size: $mob-fontSizeBase;
+    color: $mob-fontColor; 
+}
+
+#MobApp{
+    background-color: $mob-backgroundColor;
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    .mob-container{
+        width: 100%;
+        flex: 1;
+        display: flex;
+        .mob-page{
+            flex: 1;
+            height: 100%;
+            overflow: hidden;
+            position: relative;
+            .mob-page-content{
+                width: 100%;
+                overflow-y: auto;
+                height: inherit;
+            }
+        }
+    }
+}
+.mob-header{
+    flex: initial;
+    display: flex;
+    width: 100%;
+    height: 38px;
+    line-height: 38px;
+    padding: 0 21px;
+    background-color: $mob-headerColor;
+    color: #fff;
+    font-size: $mob-fontSizeBig;
+    .logo-content{
+        width: 200px;
+        flex: initial;
+        svg{
+            float: left;
+            margin-top: 7px; 
+            margin-right: 11px;
+        }
+        span{
+            float: left;
+        }
+    }
+    .other-content{
+        flex: auto;
+        text-align: right;
+        .project-content{
+            float: right;
+            margin-right: 25px;
+            .ivu-select{
+                height: 22px;
+                .ivu-select-selection{
+                    min-height: 22px; 
+                    background: #7e7f86;
+                    border-radius: 2px;
+                    border: #7e7f86 1px solid;
+                    color: #fff;
+                }
+                .ivu-select-item{
+                    text-align: left;
+                }
+            }
+            .ivu-select-arrow{
+                color: #fff;
+                margin-top: -5px;
+            }
+            .ivu-select-single .ivu-select-selection .ivu-select-placeholder{
+                color: #fff;
+            }
+            .ivu-select-single .ivu-select-selection{
+                height: 22px;
+            }
+            .ivu-select-single .ivu-select-selection .ivu-select-placeholder, .ivu-select-single .ivu-select-selection .ivu-select-selected-value{
+                height: 22px;
+                line-height: 22px;
+                text-align: left;
+            }
+        }
+        .user-content{
+            float: right;
+            a{
+                color: #fff;
+            }
+            .ivu-dropdown-menu{
+                .ivu-icon{
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}
+.mob-leftnav{
+    height: 100%;
+    width: 180px;
+    flex: initial;
+    background-color: $mob-leftNavColor;
+    padding-top: 22px;
+    .ivu-menu{
+        &> .ivu-menu-item{
+            height: 40px;
+            line-height: 15px;
+            font-size: 13px;
+            &:hover{
+                background-color: #1A1C23;
+            }
+            svg{
+                float: left;
+                margin-right: 9px;
+                margin-left: -6px;
+            }
+            &.ivu-menu-item-active{
+                color: #fff;
+                background-color: #1A1C23;
+                border: none;
+            }
+        }
+        .ivu-menu-submenu{
+            .ivu-menu-submenu-title{
+                height: 40px;
+                line-height: 40px;
+                padding: 0 0 0 21px;
+                svg{
+                    float: left;
+                    margin-right: 12px;
+                    margin-top: 13px;
+                }
+                span{
+                    float: left;
+                }
+                .ivu-icon{
+                    display: none;
+                }
+                &:hover{
+                    background-color: #1A1C23;
+                }
+            }
+            .ivu-menu{
+                .ivu-menu-item{
+                    height: 30px;
+                    line-height: 30px;
+                    padding: 0 0 0 43px;
+                    position: relative;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    width: 180px;
+                    word-break: keep-all;
+                    &-active{
+                        .tip{
+                            display: inline-block !important;
+                        }
+                    }
+                    .tip{
+                        @include IconCircle();
+                        margin-right: 16px;
+                        display: none;
+                        position: absolute;
+                        left: 21px;
+                        top: 12px;
+                    }
+                }
+            }
+        }
+    }
+}

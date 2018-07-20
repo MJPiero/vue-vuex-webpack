@@ -1,0 +1,41 @@
+/**
+ *  生成图标标识
+**/
+@mixin IconSquare($color: $mob-mainColor, $width: 4px, $height: 14px){
+    width: $width;
+    height: $height;
+    background: $color;
+    border-radius: 1px;
+    display: inline-block;
+}
+
+@mixin IconCircle($color: #6DE5B9,$width: 6px){
+    display: inline-block;
+    width: $width;
+    height: $width;
+    background: $color;
+    border-radius: 50%;
+}
+
+
+.mob-icon{
+    &-square{
+        @include IconSquare();
+        margin-right: 8px;
+        &.yellow{
+            background: $mob-ColorYellow;
+        }
+        &.red{
+            background: $mob-ColorRed;
+        }
+        &.brown{
+            background: $mob-ColorBrown;
+        }
+        &.brown2{
+            background: $mob-ColorBrown2;
+        }
+        &.red2{
+            background: $mob-ColorRed2;
+        }
+    }
+}

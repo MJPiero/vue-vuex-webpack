@@ -1,4 +1,7 @@
 # vue-vuex-webpack
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/MJPiero/vue-vuex-webpack.svg)](https://greenkeeper.io/)
+
 vue2 + vuex2 + webpack2 快速构建
 版本：v2.x+
 

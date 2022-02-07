@@ -15,7 +15,7 @@ router.afterEach((to, from, next) => {
 });
 
 const app = new Vue({
-    el: '#MobApp',
+    el: '#myApp',
     router: router,
     store: store,
     render: h => h(App)

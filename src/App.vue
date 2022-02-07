@@ -2,7 +2,7 @@
     @import './sass/base';
 </style>
 <template>
-    <div id="MobApp">
+    <div id="myApp">
         <keep-alive><HeaderMenu></HeaderMenu></keep-alive>
         <div class="mob-container">
             <div class="mob-leftnav">

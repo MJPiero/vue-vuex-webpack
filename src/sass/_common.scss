@@ -9,8 +9,8 @@ a{
     color: $mob-fontColor; 
 }
 
-#MobApp{
-    background-color: $mob-backgroundColor;
+#myApp{
+    background-color: $base-backgroundColor;
     overflow: hidden;
     height: 100%;
     display: flex;
@@ -39,7 +39,7 @@ a{
     height: 38px;
     line-height: 38px;
     padding: 0 21px;
-    background-color: $mob-headerColor;
+    background-color: $base-headerColor;
     color: #fff;
     font-size: $mob-fontSizeBig;
     .logo-content{
